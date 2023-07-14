@@ -1,0 +1,43 @@
+
+.indent-1 {
+    text-indent: 20px;
+}
+
+.code {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.block {
+    display: inline;
+}
+
+body {
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #555555;
+}
+
+nav li a:hover {
+    color: #21618c;
+}
+
+/* End Navigation */
+
+h1 {
+    text-align: center;
+}

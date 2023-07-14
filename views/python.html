@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="../stylesheets/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Python Journal</h1>
+        <hr>
+        <h3>Table of contents</h3>
+        <ul class="contents-table">
+        </ul>
+
+        <section>
+            <h2>Virtual Environments</h2>
+            <p>Commands to remember:</p>
+            <p class="code">python -m venv venv</p>
+            <p><span class="code">source venv/bin/activate</span> (mac)</p>
+            <p><span class="code">source venv/Scripts/activate</span> (windows)</p>
+        </section>
+        <section>
+            <h2>Dependencies</h2>
+            <div class="block">
+                <p class="code">pip install {dependency}</p>
+            </div>
+            <div class="block">
+                <p class="code">pip freeze > requirements.txt</p>
+            </div>
+            <div class="block">
+                <p class="code">pip install -r requirements.txt</p>
+            </div>
+        </section>
+        <section>
+            <h2>Packages</h2>
+            <ul>
+                <li>pandas</li>
+                <li>pyautogui</li>
+                <li>pyperclip</li>
+                <li>selenium</li>
+                <li>requests</li>
+                <li>random</li>
+                <li>json</li>
+                <li>beautifulsoup4</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Data Types</h2>
+            <ul>
+                <li>str</li>
+                <li>int</li>
+                <li>float</li>
+                <li>bool</li>
+                <li>List</li>
+                <li>tuple
+                    <ul>
+                        <li>Pretty much just a list but you cannont modify them once created</li>
+                        <li>More efficient</li>
+                        <li class="code">tuple_var = (15, 27)</li>
+                    </ul>
+                </li>
+                <li>dict</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Functions</h2>
+            <div class="block">
+                <h3>Syntax</h3>
+                <p class="code">def {name}({parameters}):</p>
+            </div>
+            <div class="block">
+                <p class="code">def main():</p>
+                <div class="code">
+                    <p>if __name__ == "__main__":</p>
+                    <p class="indent-1">main()</p>
+                </div>
+                <p>Python executes sequentually therfore, it will generate all the functions before the code within the functions are executed themselvs.</p>
+                <p>Placing all code in the `main` function allows you to code with functions and generates all functions before code is executed.</p>
+            </div>
+            <h3>parameters</h3>
+            <p class="code">def func(param1, param2: str, param3=20, param4=True: bool)</p>
+        </section>
+    </main>
+    <script src="../javascript/index.js"></script>
+</body>
+</html>
