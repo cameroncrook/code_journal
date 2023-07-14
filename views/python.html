@@ -88,6 +88,43 @@
             <h3>parameters</h3>
             <p class="code">def func(param1, param2: str, param3=20, param4=True: bool)</p>
         </section>
+        <section>
+            <h2 id="db">Databases</h2>
+            <div class="block">
+                <div class="code">
+                    <p>import psycopg2
+                    <p>import psycopg2.extras
+
+                    <p>class DBConfig:
+                        <p class="indent-1">username = 'sports_app'</p>
+                        <p class="indent-1">password = 'StarValley307'</p>
+                        <p class="indent-1">host = 'svinews.com'</p>
+                        <p class="indent-1">database = 'sports'</p>
+                        <p class="indent-1">schema = 'public'</p>
+                        <p class="indent-1">port = '5432'</p>
+                        <p class="indent-1">connection = None</p>
+                        <p class="indent-1">cursor = None</p>
+                        <p></p>
+                        <p class="indent-1">def init(self):</p>
+                            <p class="indent-2">connection = psycopg2.connect(</p>
+                                <p class="indent-3">database=self.database, user=self.username,password=self.password, host=self.host, port=self.port</p>
+                            <p class="indent-2">)</p>
+                            <p class="indent-2">self.cursor = connection.cursor(cursor_factory = psycopg2.extras.RealDictCursor)</p>
+                </div>
+                <div class="code">
+                    <p>connection = DBConfig()</p>
+                    <p>connection.init()</p>
+                    <p></p>
+                    <p>connection.cursor.execute("""</p>
+                    <p>select name, channel_id </p>
+                    <p>from school_content_source;</p>
+                    <p>""")</p>
+                    <p></p>
+                    <p>results = connection.cursor.fetchall()</p>
+                </div>
+                <p>This is a lightweight database connection approach.</p>
+            </div>
+        </section>
     </main>
     <script src="../javascript/index.js"></script>
 </body>
